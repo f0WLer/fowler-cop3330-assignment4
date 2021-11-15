@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+
+<?import javafx.scene.control.SeparatorMenuItem?>
+<MenuBar maxHeight="-Infinity" minHeight="-Infinity" prefHeight="28.0" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.controllers.MenuBarController">
+   <Menu mnemonicParsing="false" text="File">
+      <MenuItem mnemonicParsing="false" onAction="#file_new" text="New" />
+      <MenuItem mnemonicParsing="false" onAction="#file_open" text="Open" />
+      <MenuItem mnemonicParsing="false" onAction="#file_close" text="Close" />
+      <SeparatorMenuItem/>
+      <MenuItem mnemonicParsing="false" onAction="#file_saveAs" text="Save as..."/>
+   </Menu>
+   <Menu mnemonicParsing="false" text="List">
+      <MenuItem mnemonicParsing="false" text="New" onAction="#list_new" />
+      <SeparatorMenuItem/>
+      <MenuItem mnemonicParsing="false" text="Change title" onAction="#list_changeTitle"/>
+      <SeparatorMenuItem/>
+      <MenuItem mnemonicParsing="false" text="New Item" onAction="#list_newItem" />
+   </Menu>
+   <Menu mnemonicParsing="false" text="Help">
+      <MenuItem mnemonicParsing="false" text="About" />
+   </Menu>
+</MenuBar>
